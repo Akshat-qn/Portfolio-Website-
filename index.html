@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshat Singh | Premium Portfolio</title>
+  <meta name="description" content="Premium futuristic portfolio website for Akshat Singh, a B.Tech CSE student focused on AI, IoT, web development, and impactful technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">
+        <span class="brand-mark"></span>
+        <span>Akshat Singh</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal fade-up">
+          <p class="eyebrow">Future-Driven Developer Portfolio</p>
+          <h1>Hi, I&apos;m Akshat Singh</h1>
+          <div class="typing-wrap">
+            <span id="typingText"></span>
+            <span class="typing-caret"></span>
+          </div>
+          <p class="hero-text">
+            I&apos;m a B.Tech CSE student building intelligent, user-focused, and future-ready digital solutions with a strong interest in AI, IoT, web development, coding, and innovation.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#resume" class="btn btn-secondary">Download Resume</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal slide-in-right">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-card glass-card" data-parallax>
+            <div class="hero-card-top">
+              <span class="status-dot"></span>
+              <span>Available for Internships & Collaborations</span>
+            </div>
+            <div class="avatar-ring">
+              <div class="avatar-core">AS</div>
+            </div>
+            <div class="hero-card-stats">
+              <div>
+                <strong>5+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>10+</strong>
+                <span>Skills</span>
+              </div>
+              <div>
+                <strong>2026</strong>
+                <span>Portfolio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">About Me</p>
+          <h2>Driven by Curiosity, Built for Impact</h2>
+          <p>A powerful introduction to my mindset, technical interests, and how I approach problem solving.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image glass-card reveal slide-in-left">
+            <div class="image-frame">
+              <div class="image-placeholder">
+                <span>Akshat</span>
+                <small>B.Tech CSE Student</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-card reveal slide-in-right">
+            <p>
+              I am a passionate B.Tech Computer Science student with strong interest in Artificial Intelligence, Web Development, IoT, and software innovation. I enjoy transforming ideas into practical digital solutions and continuously learning modern technologies.
+            </p>
+            <div class="about-traits">
+              <div class="trait-pill">Problem Solving</div>
+              <div class="trait-pill">Fast Learner</div>
+              <div class="trait-pill">Team Player</div>
+              <div class="trait-pill">Creative Thinker</div>
+            </div>
+            <div class="about-mission">
+              <h3>Long-Term Goal</h3>
+              <p>To become a top software engineer and build impactful technology that solves real-world problems with intelligence, elegance, and scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Education</p>
+          <h2>Academic Journey</h2>
+          <p>A timeline of the learning foundation shaping my technical journey.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item glass-card reveal fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-meta">2023 - 2027</div>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p>Gautam Buddha University,</p>
+            <p>Focused on programming, software engineering, AI fundamentals, and innovation-led technical growth Skilled in problem-solving, coding, and building innovative projects using programming and web technologies. Quick learner with a passion for continuous growth, teamwork, and creating practical solutions to real-world challenges..</p>
+          </article>
+
+          <article class="timeline-item glass-card reveal fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-meta">2022 - 2023</div>
+            <h3>12th Grade - CBSE</h3>
+            <p>G.D Goenka International School</p>
+            <p>Built a strong base in mathematics, logic, and computer-oriented analytical thinking.</p>
+          </article>
+
+          <article class="timeline-item glass-card reveal fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-meta">2020 - 2021</div>
+            <h3>10th Grade</h3>
+            <p>G.D Goenka International School</p>
+            <p>Developed academic discipline, curiosity for technology, and the confidence to explore engineering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Skills</p>
+          <h2>Technologies I Use</h2>
+          <p>A blend of development, programming, problem solving, and emerging technology interests.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal fade-up" data-progress="95">
+            <div class="skill-icon">H</div>
+            <h3>HTML</h3>
+            <p>Semantic structure and accessible layouts.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="92">
+            <div class="skill-icon">C</div>
+            <h3>CSS</h3>
+            <p>Responsive design, animations, and premium UI styling.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="88">
+            <div class="skill-icon">J</div>
+            <h3>JavaScript</h3>
+            <p>Interactive interfaces and clean front-end logic.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="85">
+            <div class="skill-icon">Ja</div>
+            <h3>Java</h3>
+            <p>OOP fundamentals and application development.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="86">
+            <div class="skill-icon">Py</div>
+            <h3>Python</h3>
+            <p>Automation, logic building, and AI experimentation.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="78">
+            <div class="skill-icon">C</div>
+            <h3>C</h3>
+            <p>Core programming concepts and structured logic.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="80">
+            <div class="skill-icon">Gh</div>
+            <h3>GitHub</h3>
+            <p>Version control, collaboration, and project hosting.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="82">
+            <div class="skill-icon">SQL</div>
+            <h3>SQL</h3>
+            <p>Database basics, queries, and data organization.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="75">
+            <div class="skill-icon">AI</div>
+            <h3>AI Basics</h3>
+            <p>Interest in machine learning, automation, and intelligent systems.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="skill-card glass-card reveal fade-up" data-progress="90">
+            <div class="skill-icon">PS</div>
+            <h3>Problem Solving</h3>
+            <p>Logical thinking and solution-oriented development mindset.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured Work</h2>
+          <p>Selected projects that reflect my development style, technical growth, and problem-solving ability.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal fade-up">
+            <div class="project-badge">Front-End</div>
+            <h3>Portfolio Website</h3>
+            <p>A modern personal portfolio with animations, glassmorphism cards, and recruiter-ready presentation.</p>
+            <div class="project-tech">HTML | CSS | JavaScript</div>
+            <a href="#contact" class="inline-link">Live Demo</a>
+          </article>
+          <article class="project-card glass-card reveal fade-up">
+            <div class="project-badge">IoT</div>
+            <h3>IoT Smart Energy Meter</h3>
+            <p>A smart system concept for tracking energy consumption, improving monitoring, and encouraging efficient power usage.</p>
+            <div class="project-tech">IoT | Sensors | Analytics</div>
+            <a href="#contact" class="inline-link">Live Demo</a>
+          </article>
+          <article class="project-card glass-card reveal fade-up">
+            <div class="project-badge">Java App</div>
+            <h3>Java Management System</h3>
+            <p>A desktop-style management solution designed for organized record keeping and streamlined administrative workflows.</p>
+            <div class="project-tech">Java | OOP | Database</div>
+            <a href="#contact" class="inline-link">Live Demo</a>
+          </article>
+          <article class="project-card glass-card reveal fade-up">
+            <div class="project-badge">AI</div>
+            <h3>AI Chatbot</h3>
+            <p>An intelligent conversational assistant concept focused on interactive user support and basic automation tasks.</p>
+            <div class="project-tech">Python | AI Basics | NLP</div>
+            <a href="#contact" class="inline-link">Live Demo</a>
+          </article>
+          <article class="project-card glass-card reveal fade-up">
+            <div class="project-badge">Academic</div>
+            <h3>Student Management System</h3>
+            <p>A structured system for handling student data, academic records, and simplified administrative operations.</p>
+            <div class="project-tech">JavaScript | SQL | UI Design</div>
+            <a href="#contact" class="inline-link">Live Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-card glass-card reveal fade-up">
+          <div>
+            <p class="eyebrow">Resume / CV</p>
+            <h2>Professional Resume Snapshot</h2>
+            <p>Download my resume to review my academic background, technical interests, projects, and growth journey.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Download Resume PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dual-section">
+      <div class="container dual-grid">
+        <div id="certifications">
+          <div class="section-heading reveal fade-up align-left">
+            <p class="eyebrow">Certifications</p>
+            <h2>Learning Milestones</h2>
+            <p>Placeholder achievements for courses, workshops, and certifications.</p>
+          </div>
+
+          <div class="cert-grid">
+            <article class="glass-card cert-card reveal fade-up">
+              <h3>Web Development Certificate</h3>
+              <p>Modern front-end development and responsive UI practices.</p>
+            </article>
+            <article class="glass-card cert-card reveal fade-up">
+              <h3>AI Fundamentals</h3>
+              <p>Introduction to AI concepts, models, and real-world applications.</p>
+            </article>
+            <article class="glass-card cert-card reveal fade-up">
+              <h3>IoT Workshop Participation</h3>
+              <p>Hands-on exposure to devices, sensors, and connected systems.</p>
+            </article>
+          </div>
+        </div>
+
+        <div id="achievements">
+          <div class="section-heading reveal fade-up align-left">
+            <p class="eyebrow">Achievements</p>
+            <h2>Growth in Numbers</h2>
+            <p>Quick highlights that present momentum, consistency, and passion for building.</p>
+          </div>
+
+          <div class="achievement-grid">
+            <article class="glass-card achievement-card reveal fade-up">
+              <strong class="counter" data-target="9">0</strong>
+              <span>Projects Completed</span>
+            </article>
+            <article class="glass-card achievement-card reveal fade-up">
+              <strong class="counter" data-target="6">0</strong>
+              <span>Technologies Learned</span>
+            </article>
+            <article class="glass-card achievement-card reveal fade-up">
+              <strong class="counter" data-target="1">0</strong>
+              <span>Hackathons / Events</span>
+            </article>
+            <article class="glass-card achievement-card reveal fade-up">
+              <strong class="counter" data-target="10">0</strong>
+              <span>GitHub Contributions</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Contact Me</p>
+          <h2>Let&apos;s Build Something Meaningful</h2>
+          <p>I&apos;m open to internships, collaborations, workshops, and exciting student or developer opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card glass-card reveal slide-in-left">
+            <h3>Reach Out</h3>
+            <p>If you&apos;re looking for a motivated B.Tech CSE student who loves building technology with purpose, I&apos;d be happy to connect.</p>
+            <div class="contact-links">
+              <a href="mailto:akshat@example.com">Email: akshat@example.com</a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub: Akshat-qn</a>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card reveal slide-in-right">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Akshat Singh | Designed with Passion</p>
+      <a href="#home" class="inline-link">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
